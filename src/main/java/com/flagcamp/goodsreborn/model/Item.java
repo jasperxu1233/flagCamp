@@ -39,7 +39,7 @@ public class Item implements Serializable {
     public Item() {
     }
 
-    public Item(Builder builder) {
+    private Item(Builder builder) {
         //this.id = id;
         this.seller = builder.seller;
         this.itemName = builder.itemName;
@@ -160,7 +160,6 @@ public class Item implements Serializable {
         private List<ItemImage> itemImages;
         public Builder() {
         }
-
         public Builder setSeller(Seller seller) {
             this.seller = seller;
             return this;
